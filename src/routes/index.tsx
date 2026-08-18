@@ -223,7 +223,7 @@ function Index() {
             </span>
             <h1 className="mt-8 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
               Polish Architect (.co.uk)
-              <span className="block text-muted-foreground">
+              <span className="block text-3xl text-muted-foreground md:text-5xl lg:text-6xl">
                 Construction made simple from concept to completion
               </span>
             </h1>
