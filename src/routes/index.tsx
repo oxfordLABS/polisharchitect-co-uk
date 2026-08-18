@@ -171,8 +171,8 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
         <div className="glass-card section-shell flex items-center justify-between gap-6 rounded-2xl py-4">
-          <a href="#top" className="max-w-[16rem] text-lg font-semibold leading-tight text-red-500">
-            Polish Architect&nbsp;<br />
+          <a href="#top" className="max-w-[16rem] text-lg font-semibold leading-tight">
+            <span className="text-foreground">Polish</span> Architect&nbsp;<br />
             <span className="text-red-500">(co.uk)</span>
           </a>
           <nav className="hidden items-center gap-7 lg:flex">
