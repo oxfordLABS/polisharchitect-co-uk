@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   ArrowRight,
-  BadgeCheck,
   Gavel,
   Search,
   Landmark,
@@ -44,9 +43,6 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-const credentials = [
-  { icon: BadgeCheck, label: "ARB Registered" },
-];
 
 const services = [
   {
@@ -237,14 +233,6 @@ function Index() {
               >
                 Explore Services
               </a>
-            </div>
-            <div className="mt-16 grid gap-5 border-t border-border pt-10 sm:grid-cols-2 lg:grid-cols-4">
-              {credentials.map((c) => (
-                <div key={c.label} className="flex items-center gap-3 text-muted-foreground">
-                  <c.icon className="h-4 w-4" />
-                  <span className="label-xs">{c.label}</span>
-                </div>
-              ))}
             </div>
           </div>
         </section>
