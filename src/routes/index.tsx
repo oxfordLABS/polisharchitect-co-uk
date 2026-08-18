@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   ArrowRight,
   BadgeCheck,
-  Compass,
   Gavel,
   Search,
   Landmark,
@@ -47,7 +46,6 @@ const navLinks = [
 
 const credentials = [
   { icon: BadgeCheck, label: "ARB Registered" },
-  { icon: Compass, label: "CDM Principal Designer" },
 ];
 
 const services = [
