@@ -173,7 +173,7 @@ function Index() {
         <div className="glass-card section-shell flex items-center justify-between gap-6 rounded-2xl py-4">
           <a href="#top" className="max-w-[16rem] text-lg font-semibold leading-tight">
             <span className="text-foreground">Polish</span> Architect&nbsp;<br />
-            <span className="text-red-500">(co.uk)</span>
+            <span className="text-red-500">(co.uk)</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
           </a>
           <nav className="hidden items-center gap-7 lg:flex">
             {navLinks.map((l) => (
