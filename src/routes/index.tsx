@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   ArrowRight,
   BadgeCheck,
-  GraduationCap,
   Compass,
   Gavel,
   Search,
@@ -48,7 +47,6 @@ const navLinks = [
 
 const credentials = [
   { icon: BadgeCheck, label: "ARB Registered" },
-  { icon: GraduationCap, label: "Dual UK & EU Qualifications" },
   { icon: Compass, label: "CDM Principal Designer" },
   { icon: Gavel, label: "Building Safety Act 2022 Compliant" },
 ];
