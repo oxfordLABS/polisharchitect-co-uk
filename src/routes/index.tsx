@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   ArrowRight,
   BadgeCheck,
-  GraduationCap,
   Compass,
   Gavel,
   Search,
