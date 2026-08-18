@@ -328,10 +328,13 @@ function Index() {
                 An architect who speaks your language
               </h2>
               <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground">
-                Based in Oxford and working across the whole of the UK, the practice combines dual
-                UK and EU qualifications with ARB registration and CDM Principal Designer duties.
-                From the first sketch to the final certificate, every legal, technical and safety
-                requirement is handled and explained clearly — in Polish and English.
+                Based in Oxford and working across the whole of the UK, the practice specialises
+                in all aspects of construction and property-related services. From the first
+                sketch to the final certificate, every legal, technical, and safety requirement is
+                handled and explained clearly — in Polish or English. We pride ourselves on deep
+                industry knowledge and 20+ years of UK experience designing award-winning
+                residential and commercial projects, delivering complete architectural vision,
+                technical precision, and total peace of mind for every client.
               </p>
             </div>
           </div>
