@@ -217,14 +217,10 @@ function Index() {
           />
           <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/50 via-background/85 to-background" />
           <div className="section-shell">
-            <span className="glass-card label-xs inline-flex items-center gap-2 rounded-full px-4 py-2 text-muted-foreground">
-              <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
-              ARB Registered Architect • UK &amp; EU Qualified • Based in Oxford
-            </span>
             <h1 className="mt-8 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
               Polish Architect (.co.uk)
               <span className="block text-3xl text-muted-foreground md:text-5xl lg:text-6xl">
-                Construction made simple from concept to completion
+                Construction made simple<br />from concept to completion
               </span>
             </h1>
             <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
