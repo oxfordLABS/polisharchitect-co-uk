@@ -56,7 +56,7 @@ const credentials = [
 const services = [
   {
     icon: Gavel,
-    title: "Regulatory Compliance & Building Control",
+    title: "Regulatory Compliance",
     body: "Navigating the complexities of UK building regulations, including full Building Safety Act 2022 compliance and Thames Water Build Over Agreements.",
     points: [
       "Principal Designer Duties",
@@ -66,7 +66,7 @@ const services = [
   },
   {
     icon: Search,
-    title: "Feasibility Studies & Concept Design",
+    title: "Initial Design",
     body: "Initial site appraisals and conceptual designs to maximise the potential of your property while respecting local context and constraints.",
     points: ["Site Appraisals", "Capacity Studies", "Initial Concept Layouts"],
   },
@@ -222,7 +222,7 @@ function Index() {
               ARB Registered Architect • UK &amp; EU Qualified • Based in Oxford
             </span>
             <h1 className="mt-8 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-              Polish Architect .co.uk
+              Polish Architect (.co.uk)
               <span className="block text-muted-foreground">
                 Construction made simple from concept to completion
               </span>
@@ -262,11 +262,10 @@ function Index() {
         <section id="services" className="scroll-mt-32 py-24">
           <div className="section-shell">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
-              Core Architectural Services
+              Architectural Services
             </h2>
             <p className="label-xs mt-5 text-muted-foreground">
-              Surveying I Design I Architecture I Project Management I Health &amp; Safety I CDM I
-              Property Consultancy
+              SURVEYING I DESIGN I ARCHITECTURE I PROJECT MANAGEMENT I PROPERTY CONSULTANCY
             </p>
             <div className="mt-14 grid gap-6 md:grid-cols-2">
               {services.map((s) => (
