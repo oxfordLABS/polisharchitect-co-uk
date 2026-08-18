@@ -48,7 +48,6 @@ const navLinks = [
 const credentials = [
   { icon: BadgeCheck, label: "ARB Registered" },
   { icon: Compass, label: "CDM Principal Designer" },
-  { icon: Gavel, label: "Building Safety Act 2022 Compliant" },
 ];
 
 const services = [
