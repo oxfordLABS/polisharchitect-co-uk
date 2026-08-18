@@ -48,7 +48,7 @@ const services = [
   {
     icon: Gavel,
     title: "Regulatory Compliance",
-    body: "Navigating the complexities of UK building regulations, including full Building Safety Act 2022 compliance and Thames Water Build Over Agreements.",
+    body: "Navigating the complexities of UK Building Regulations, Building Safety Act, Party Wall, CDM and H&S compliance.",
     points: [
       "Principal Designer Duties",
       "Building Control Applications",
@@ -71,7 +71,7 @@ const services = [
     icon: DraftingCompass,
     title: "Technical Design & Tender",
     body: "Detailed technical drawings and specifications for construction, enabling accurate pricing and seamless execution on site.",
-    points: ["Detailed Construction Drawings", "Schedule of Works", "Tender Coordination"],
+    points: ["Detailed Construction Drawings", "Schedule of Works", "Tender Documentation & Coordination"],
   },
 ];
 
