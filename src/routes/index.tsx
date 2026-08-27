@@ -262,10 +262,13 @@ function Index() {
                 <div>
                   <h3 className="label-xs text-muted-foreground">{t.contactLabel}</h3>
                   <p className="mt-3 flex items-center gap-2 text-lg">
-                    <Mail className="h-4 w-4 text-muted-foreground" /> contact@polisharchitect.uk
+                    <Mail className="h-4 w-4 text-muted-foreground" />
+                    <a href="mailto:polskiarchitekt.UK@gmail.com" className="hover:text-primary transition-colors">
+                      email
+                    </a>
                   </p>
                   <p className="mt-1 flex items-center gap-2 text-lg">
-                    <Phone className="h-4 w-4 text-muted-foreground" /> +44 (0) 7000 000 000
+                    <Phone className="h-4 w-4 text-muted-foreground" /> 0748 12 44 212
                   </p>
                 </div>
               </div>
