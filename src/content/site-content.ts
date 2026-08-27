@@ -35,7 +35,7 @@ export const content = {
       {
         title: "Initial Design",
         body: "Initial site appraisals and conceptual designs to maximise the potential of your property while respecting local context and constraints.",
-        points: ["Site Appraisals", "Capacity Studies", "Initial Concept Layouts"],
+        points: ["Site Appraisals", "Feasibility Studies", "Interior and Landscape Designs"],
       },
       {
         title: "Planning Applications",
@@ -202,7 +202,7 @@ export const content = {
       {
         title: "Projekt wstępny",
         body: "Wstępne analizy działki i projekty koncepcyjne maksymalizujące potencjał nieruchomości z poszanowaniem lokalnego kontekstu i ograniczeń.",
-        points: ["Analizy działki", "Studia chłonności", "Wstępne układy koncepcyjne"],
+        points: ["Analizy działki", "Studia wykonalności", "Projektowanie wnętrz i terenów zielonych"],
       },
       {
         title: "Wnioski o pozwolenie na budowę",
