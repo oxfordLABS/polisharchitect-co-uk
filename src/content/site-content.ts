@@ -210,7 +210,7 @@ export const content = {
         points: [
           "Konsultacje przedwnioskowe",
           "Pełne wnioski planistyczne",
-          "Zgody na budynki zabytkowe",
+          "Pełne pozwolenia na budowe z uwzgledniajac budynki zabytkowe",
         ],
       },
       {
