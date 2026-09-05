@@ -65,7 +65,17 @@ function Index() {
         <div className="glass-card section-shell flex items-center justify-between gap-6 rounded-2xl py-4">
           <a href="#top" className="max-w-[16rem] text-lg font-semibold leading-tight">
             <span className="rounded bg-white px-1 text-red-500">Polish</span> <span className="rounded bg-red-500 px-1 text-white">Architect</span>&nbsp;<br />
-            <span className="text-muted-foreground">(co.uk)</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            <button
+              type="button"
+              onClick={toggleLang}
+              aria-label={lang === "en" ? "Switch to Polish" : "Przełącz na angielski"}
+              className="text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <span className={lang === "pl" ? "text-foreground" : undefined}>PL</span>
+              <span className="text-muted-foreground">/</span>
+              <span className={lang === "en" ? "text-foreground" : undefined}>UK</span>
+            </button>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
           </a>
           <nav className="hidden items-center gap-7 lg:flex">
             {t.nav.map((l) => (
