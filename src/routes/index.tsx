@@ -71,9 +71,9 @@ function Index() {
               aria-label={lang === "en" ? "Switch to Polish" : "Przełącz na angielski"}
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
+              <span className={lang === "en" ? "text-foreground" : undefined}>EN</span>
+              <span className="text-muted-foreground"> | </span>
               <span className={lang === "pl" ? "text-foreground" : undefined}>PL</span>
-              <span className="text-muted-foreground">/</span>
-              <span className={lang === "en" ? "text-foreground" : undefined}>UK</span>
             </button>
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
           </a>
@@ -87,16 +87,6 @@ function Index() {
                 {l.label}
               </a>
             ))}
-            <button
-              type="button"
-              onClick={toggleLang}
-              aria-label={lang === "en" ? "Switch to Polish" : "Przełącz na angielski"}
-              className="label-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              <span className={lang === "en" ? "text-foreground" : undefined}>EN</span>
-              {" | "}
-              <span className={lang === "pl" ? "text-foreground" : undefined}>PL</span>
-            </button>
           </nav>
           <a
             href="#contact"
