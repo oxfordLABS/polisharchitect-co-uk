@@ -123,7 +123,9 @@ function Index() {
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="#contact"
+                href="https://photos.app.goo.gl/mhoKSg97LZJcqnC97"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="label-xs inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-primary-foreground transition-opacity hover:opacity-85"
               >
                 {t.ctaStart} <ArrowRight className="h-4 w-4" />
