@@ -14,7 +14,7 @@ export const content = {
     heroTagline: ["Construction made simple", "from concept to completion"],
     heroBody:
       "Complete architectural design, planning and other statutory approvals, technical compliance, and complete site project management for your development. We guide you through the entire construction process handling every legal, technical, and safety detail — explained and run seamlessly in Polish and English.",
-    ctaStart: "Start Your Project",
+    ctaStart: "See our Projects",
     ctaServices: "Explore Services",
     aboutTitle: "An architect who speaks your language",
     aboutBody:
@@ -181,7 +181,7 @@ export const content = {
     heroTagline: ["Budowa w prosty sposób", "od koncepcji do realizacji"],
     heroBody:
       "Kompleksowe projektowanie architektoniczne, pozwolenia na budowę i inne zgody urzędowe, zgodność techniczna oraz pełne zarządzanie projektem na budowie. Prowadzimy Państwa przez cały proces budowlany, zajmując się każdym aspektem prawnym, technicznym i bezpieczeństwa — wszystko wyjaśnione i realizowane po polsku i po angielsku.",
-    ctaStart: "Rozpocznij projekt",
+    ctaStart: "Zobacz nasze projekty",
     ctaServices: "Zobacz usługi",
     aboutTitle: "Architekt, który mówi Twoim językiem",
     aboutBody:
