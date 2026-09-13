@@ -149,7 +149,7 @@ function Index() {
         </section>
 
         {/* About */}
-        <section id="about" className="scroll-mt-32 py-24">
+        <section id="about" className="relative scroll-mt-32 py-24">
           <div className="section-shell">
             <div className="glass-card rounded-3xl p-8 md:p-16">
               <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
@@ -160,6 +160,13 @@ function Index() {
               </p>
             </div>
           </div>
+          <a
+            href="#top"
+            aria-label={lang === "en" ? "Back to top" : "Powrót do góry"}
+            className="absolute bottom-6 right-6 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background/80 text-muted-foreground backdrop-blur-sm transition-colors hover:text-foreground"
+          >
+            <ArrowUp className="h-4 w-4" />
+          </a>
         </section>
 
         {/* Services */}
