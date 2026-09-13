@@ -272,10 +272,17 @@ function Index() {
               ))}
             </div>
           </div>
+          <a
+            href="#top"
+            aria-label={lang === "en" ? "Back to top" : "Powrót do góry"}
+            className="absolute bottom-6 right-6 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background/80 text-muted-foreground backdrop-blur-sm transition-colors hover:text-foreground"
+          >
+            <ArrowUp className="h-4 w-4" />
+          </a>
         </section>
 
         {/* Contact */}
-        <section id="contact" className="scroll-mt-32 py-24">
+        <section id="contact" className="relative scroll-mt-32 py-24">
           <div className="section-shell">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
               {t.contactTitle}
