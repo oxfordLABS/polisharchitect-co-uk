@@ -101,7 +101,7 @@ function Index() {
 
       <main id="top">
         {/* Hero */}
-        <section className="relative overflow-hidden pb-24 pt-44 md:pt-52">
+        <section className="relative overflow-hidden pb-12 pt-44 md:pt-52">
           <img
             src={heroImage}
             alt={t.heroAlt}
@@ -149,7 +149,7 @@ function Index() {
         </section>
 
         {/* About */}
-        <section id="about" className="relative scroll-mt-32 py-24">
+        <section id="about" className="relative scroll-mt-32 py-12">
           <div className="section-shell">
             <div className="glass-card rounded-3xl p-8 md:p-16">
               <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
@@ -170,7 +170,7 @@ function Index() {
         </section>
 
         {/* Services */}
-        <section id="services" className="relative scroll-mt-32 py-24">
+        <section id="services" className="relative scroll-mt-32 py-12">
           <div className="section-shell">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
               {t.servicesTitle}
@@ -210,7 +210,7 @@ function Index() {
         </section>
 
         {/* Process */}
-        <section id="process" className="relative scroll-mt-32 py-24">
+        <section id="process" className="relative scroll-mt-32 py-12">
           <div className="section-shell">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
               {t.processTitle}
@@ -243,7 +243,7 @@ function Index() {
         </section>
 
         {/* FAQ */}
-        <section id="faq" className="relative scroll-mt-32 py-24">
+        <section id="faq" className="relative scroll-mt-32 py-12">
           <div className="mx-auto max-w-3xl px-6">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">{t.faqTitle}</h2>
             <p className="mt-5 text-base text-muted-foreground">{t.faqSub}</p>
@@ -282,7 +282,7 @@ function Index() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="relative scroll-mt-32 py-24">
+        <section id="contact" className="relative scroll-mt-32 py-12">
           <div className="section-shell">
             <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
               {t.contactTitle}
