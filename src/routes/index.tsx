@@ -5,6 +5,7 @@ import {
   ArrowUp,
   Facebook,
   Instagram,
+  Linkedin,
   Gavel,
   Search,
   Landmark,
@@ -399,6 +400,15 @@ function Index() {
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
               <Instagram className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jakub-boronczyk-msc-dip-architect-arb-955609b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <Linkedin className="h-5 w-5" />
             </a>
           </div>
           <p className="label-xs text-muted-foreground">{t.footerRight}</p>
