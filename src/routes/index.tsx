@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import {
   ArrowRight,
   ArrowUp,
+  Facebook,
   Gavel,
   Search,
   Landmark,
@@ -378,7 +379,18 @@ function Index() {
 
       <footer className="border-t border-border py-10">
         <div className="section-shell flex flex-wrap items-center justify-between gap-4">
-          <p className="label-xs text-muted-foreground">Polish Architect .co.uk</p>
+          <div className="flex flex-wrap items-center gap-6">
+            <p className="label-xs text-muted-foreground">Polish Architect .co.uk</p>
+            <a
+              href="https://www.facebook.com/profile.php?id=61594111666308"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <Facebook className="h-5 w-5" />
+            </a>
+          </div>
           <p className="label-xs text-muted-foreground">{t.footerRight}</p>
         </div>
       </footer>
