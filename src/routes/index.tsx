@@ -4,6 +4,7 @@ import {
   ArrowRight,
   ArrowUp,
   Facebook,
+  Instagram,
   Gavel,
   Search,
   Landmark,
@@ -389,6 +390,15 @@ function Index() {
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
               <Facebook className="h-5 w-5" />
+            </a>
+            <a
+              href="https://photos.google.com/share/AF1QipN1wE5GkHbQUIuyvMOiN9iTfrk-moPnlY3R4lvnBdJcyMYJ8M4zgMeuHcZI7B607A?key=aV9TbURUUlBkQzJNYWl6eXNSTWxnUmg3bHAzajdn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <Instagram className="h-5 w-5" />
             </a>
           </div>
           <p className="label-xs text-muted-foreground">{t.footerRight}</p>
