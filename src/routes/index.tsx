@@ -14,9 +14,16 @@ import {
   Mail,
   Phone,
   MapPin,
+  ChevronDown,
 } from "lucide-react";
 import heroImage from "@/assets/hero-architecture.jpg";
 import { content, type Lang } from "@/content/site-content";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export const Route = createFileRoute("/")({
   head: () => ({
