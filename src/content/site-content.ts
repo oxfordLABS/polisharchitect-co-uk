@@ -182,7 +182,7 @@ export const content = {
     heroTitle: "Polski Architekt (.co.uk)",
     heroTagline: ["Budowa w prosty sposób", "od koncepcji do realizacji"],
     heroBody:
-      "Kompleksowe projektowanie architektoniczne, pozwolenia na budowę i inne zgody urzędowe, zgodność techniczna oraz pełne zarządzanie projektem na budowie. Prowadzimy Państwa przez cały proces budowlany, zajmując się każdym aspektem prawnym, technicznym i bezpieczeństwa — wszystko wyjaśnione i realizowane po polsku i po angielsku.",
+      "Kompleksowe projektowanie architektoniczne, pozwolenia na budowę i inne zgody urzędowe, zgodność techniczna oraz pełne zarządzanie projektem na budowie. Poprowadzimy Państwa przez cały proces budowlany, zajmując się każdym aspektem prawnym, technicznym i bezpieczeństwa — wszystko wyjaśnione i realizowane po polsku i po angielsku.",
     ctaStart: "Zobacz nasze projekty",
     ctaServices: "Zobacz usługi",
     aboutTitle: "Architekt, który mówi Twoim językiem",
