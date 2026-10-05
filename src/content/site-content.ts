@@ -2,6 +2,7 @@ export type Lang = "en" | "pl";
 
 export const content = {
   en: {
+    homeLabel: "Home",
     nav: [
       { label: "About", href: "#about" },
       { label: "Services", href: "#services" },
@@ -169,6 +170,7 @@ export const content = {
     heroAlt: "Dark minimalist concrete stairwell in a contemporary building",
   },
   pl: {
+    homeLabel: "Strona główna",
     nav: [
       { label: "O nas", href: "#about" },
       { label: "Usługi", href: "#services" },
