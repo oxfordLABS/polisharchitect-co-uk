@@ -14,7 +14,6 @@ import {
   Mail,
   Phone,
   MapPin,
-  ChevronDown,
   Menu,
 } from "lucide-react";
 import heroImage from "@/assets/hero-architecture.jpg";
