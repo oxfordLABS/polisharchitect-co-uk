@@ -74,20 +74,50 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
         <div className="glass-card section-shell flex items-center justify-between gap-6 rounded-2xl py-4">
-          <a href="#top" className="max-w-[16rem] text-lg font-semibold leading-tight">
-            <span className="rounded bg-white px-1 text-red-500">Polish</span> <span className="rounded bg-red-500 px-1 text-white">Architect</span>&nbsp;<br />
-            <button
-              type="button"
-              onClick={toggleLang}
-              aria-label={lang === "en" ? "Switch to Polish" : "Przełącz na angielski"}
-              className="text-muted-foreground transition-colors hover:text-foreground"
-            >
-              <span className={lang === "en" ? "text-foreground" : undefined}>EN</span>
-              <span className="text-muted-foreground"> | </span>
-              <span className={lang === "pl" ? "text-foreground" : undefined}>PL</span>
-            </button>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-          </a>
+          <div className="flex flex-col items-start gap-1">
+            <a href="#top" className="text-lg font-semibold leading-tight">
+              <span className="rounded bg-white px-1 text-red-500">Polish</span> <span className="rounded bg-red-500 px-1 text-white">Architect</span>
+            </a>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={toggleLang}
+                aria-label={lang === "en" ? "Switch to Polish" : "Przełącz na angielski"}
+                className="text-muted-foreground transition-colors hover:text-foreground"
+              >
+                <span className={lang === "en" ? "text-foreground" : undefined}>EN</span>
+                <span className="text-muted-foreground"> | </span>
+                <span className={lang === "pl" ? "text-foreground" : undefined}>PL</span>
+              </button>
+              <DropdownMenu modal={false}>
+                <DropdownMenuTrigger
+                  aria-label={lang === "en" ? "Open menu" : "Otwórz menu"}
+                  className="label-xs flex items-center gap-1 rounded-full border border-border px-3 py-1 text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  Menu
+                  <ChevronDown className="size-3" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent
+                  align="start"
+                  sideOffset={8}
+                  className="glass-card min-w-[10rem] rounded-xl border-border p-1.5"
+                >
+                  <DropdownMenuItem asChild>
+                    <a href="#top" className="label-xs cursor-pointer text-muted-foreground transition-colors hover:text-foreground focus:text-foreground">
+                      {t.homeLabel}
+                    </a>
+                  </DropdownMenuItem>
+                  {t.nav.map((l) => (
+                    <DropdownMenuItem key={l.href} asChild>
+                      <a href={l.href} className="label-xs cursor-pointer text-muted-foreground transition-colors hover:text-foreground focus:text-foreground">
+                        {l.label}
+                      </a>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+          </div>
           <nav className="hidden items-center gap-7 lg:flex">
             {t.nav.map((l) => (
               <a
