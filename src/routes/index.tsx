@@ -15,6 +15,7 @@ import {
   Phone,
   MapPin,
   ChevronDown,
+  Menu,
 } from "lucide-react";
 import heroImage from "@/assets/hero-architecture.jpg";
 import { content, type Lang } from "@/content/site-content";
@@ -89,33 +90,6 @@ function Index() {
                 <span className="text-muted-foreground"> | </span>
                 <span className={lang === "pl" ? "text-foreground" : undefined}>PL</span>
               </button>
-              <DropdownMenu modal={false}>
-                <DropdownMenuTrigger
-                  aria-label={lang === "en" ? "Open menu" : "Otwórz menu"}
-                  className="label-xs flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-border px-3 py-1 text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                >
-                  Menu
-                  <ChevronDown className="size-3" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent
-                  align="start"
-                  sideOffset={8}
-                  className="glass-card min-w-[10rem] rounded-xl border-border p-1.5"
-                >
-                  <DropdownMenuItem asChild>
-                    <a href="#top" className="label-xs cursor-pointer text-muted-foreground transition-colors hover:text-foreground focus:text-foreground">
-                      {t.homeLabel}
-                    </a>
-                  </DropdownMenuItem>
-                  {t.nav.map((l) => (
-                    <DropdownMenuItem key={l.href} asChild>
-                      <a href={l.href} className="label-xs cursor-pointer text-muted-foreground transition-colors hover:text-foreground focus:text-foreground">
-                        {l.label}
-                      </a>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
             </div>
           </div>
           <nav className="hidden items-center gap-7 lg:flex">
@@ -129,13 +103,44 @@ function Index() {
               </a>
             ))}
           </nav>
-          <a
-            href="#contact"
-            className="label-xs rounded-full bg-primary px-5 py-3 text-center leading-tight text-primary-foreground transition-opacity hover:opacity-85"
-          >
-            {t.bookConsultation[0]}
-            <br className="hidden md:block" /> {t.bookConsultation[1]}
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href="#contact"
+              className="label-xs rounded-full bg-primary px-5 py-3 text-center leading-tight text-primary-foreground transition-opacity hover:opacity-85"
+            >
+              {t.bookConsultation[0]}
+              <br className="hidden md:block" /> {t.bookConsultation[1]}
+            </a>
+            <DropdownMenu modal={false}>
+              <DropdownMenuTrigger
+                aria-label={lang === "en" ? "Open menu" : "Otwórz menu"}
+                className="grid size-11 shrink-0 place-items-center rounded-full border border-border bg-transparent text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring data-[state=open]:text-foreground"
+              >
+                <Menu className="size-5" aria-hidden="true" />
+                <span className="sr-only">
+                  {lang === "en" ? "Menu" : "Menu"}
+                </span>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent
+                align="end"
+                sideOffset={8}
+                className="glass-card min-w-[10rem] rounded-xl border-border p-1.5"
+              >
+                <DropdownMenuItem asChild>
+                  <a href="#top" className="label-xs cursor-pointer text-muted-foreground transition-colors hover:text-foreground focus:text-foreground">
+                    {t.homeLabel}
+                  </a>
+                </DropdownMenuItem>
+                {t.nav.map((l) => (
+                  <DropdownMenuItem key={l.href} asChild>
+                    <a href={l.href} className="label-xs cursor-pointer text-muted-foreground transition-colors hover:text-foreground focus:text-foreground">
+                      {l.label}
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
         </div>
       </header>
 
