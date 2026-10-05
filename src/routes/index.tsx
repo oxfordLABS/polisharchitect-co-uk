@@ -83,7 +83,7 @@ function Index() {
                 type="button"
                 onClick={toggleLang}
                 aria-label={lang === "en" ? "Switch to Polish" : "Przełącz na angielski"}
-                className="text-muted-foreground transition-colors hover:text-foreground"
+                className="shrink-0 whitespace-nowrap text-muted-foreground transition-colors hover:text-foreground"
               >
                 <span className={lang === "en" ? "text-foreground" : undefined}>EN</span>
                 <span className="text-muted-foreground"> | </span>
@@ -92,7 +92,7 @@ function Index() {
               <DropdownMenu modal={false}>
                 <DropdownMenuTrigger
                   aria-label={lang === "en" ? "Open menu" : "Otwórz menu"}
-                  className="label-xs flex items-center gap-1 rounded-full border border-border px-3 py-1 text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                  className="label-xs flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-border px-3 py-1 text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
                   Menu
                   <ChevronDown className="size-3" />
