@@ -41,7 +41,93 @@ export const Route = createFileRoute("/")({
           "Complete architectural design, planning approvals, technical compliance and site project management — explained in Polish and English.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.polisharchitect.co.uk/" },
+      { property: "og:site_name", content: "Polish Architect UK" },
+      { property: "og:locale", content: "en_GB" },
+      { property: "og:locale:alternate", content: "pl_PL" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Polish Architect UK | ARB Registered Architect" },
+      {
+        name: "twitter:description",
+        content:
+          "Architectural design, planning approvals, building regulations and project management in Polish and English across the UK.",
+      },
+      {
+        name: "keywords",
+        content:
+          "Polish architect UK, polski architekt UK, architekt Oxford, ARB registered architect, planning permission, building regulations, Party Wall, CDM, listed buildings, RIBA",
+      },
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
+      { name: "geo.region", content: "GB-OXF" },
+      { name: "geo.placename", content: "Oxford" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://www.polisharchitect.co.uk/" },
+      { rel: "alternate", hrefLang: "en-GB", href: "https://www.polisharchitect.co.uk/" },
+      { rel: "alternate", hrefLang: "pl", href: "https://www.polisharchitect.co.uk/" },
+      { rel: "alternate", hrefLang: "x-default", href: "https://www.polisharchitect.co.uk/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": ["ProfessionalService", "LocalBusiness"],
+              "@id": "https://www.polisharchitect.co.uk/#business",
+              name: "Polish Architect UK",
+              alternateName: "Polski Architekt UK",
+              url: "https://www.polisharchitect.co.uk/",
+              image: "https://www.polisharchitect.co.uk/favicon.png",
+              description:
+                "ARB registered Polish architect based in Oxford serving the whole UK: architectural design, planning permission, building regulations, Party Wall, CDM and project management in Polish and English.",
+              telephone: "+44 7481 244212",
+              email: "polskiarchitekt.UK@gmail.com",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Oxford",
+                addressCountry: "GB",
+              },
+              areaServed: { "@type": "Country", name: "United Kingdom" },
+              knowsLanguage: ["en", "pl"],
+              sameAs: [
+                "https://www.facebook.com/profile.php?id=61594111666308",
+                "https://www.linkedin.com/in/jakub-boronczyk-msc-dip-architect-arb-955609b/",
+              ],
+              founder: {
+                "@type": "Person",
+                name: "Jakub Boronczyk",
+                jobTitle: "ARB Registered Architect",
+              },
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Architectural services",
+                itemListElement: [
+                  "Architectural design",
+                  "Planning applications and listed building consent",
+                  "Building Regulations and Building Safety Act compliance",
+                  "Party Wall, CDM and Health & Safety",
+                  "Tender documentation and coordination",
+                  "Feasibility studies",
+                  "Interior and landscape design",
+                ].map((name) => ({
+                  "@type": "Offer",
+                  itemOffered: { "@type": "Service", name },
+                })),
+              },
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://www.polisharchitect.co.uk/#website",
+              url: "https://www.polisharchitect.co.uk/",
+              name: "Polish Architect UK",
+              inLanguage: ["en-GB", "pl"],
+              publisher: { "@id": "https://www.polisharchitect.co.uk/#business" },
+            },
+          ],
+        }),
+      },
     ],
   }),
   component: Index,
